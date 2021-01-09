@@ -1,0 +1,21 @@
+{
+  "Resources": {
+    "ServerInstance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "InstanceType": {
+          "Ref": "InstanceType"
+        },
+        "ImageId": {
+            "Fn::FindInMap": [
+                "AWSRegionToAMI",
+                {
+                    "Ref": "AWS::Region"
+                },
+                "AMI"
+            ]
+        }
+      }
+    }
+  }
+}
