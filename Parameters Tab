@@ -1,0 +1,14 @@
+{
+  "Parameters": {
+    "InstanceType": {
+      "Description": "Server EC2 instance type",
+      "Type": "String",
+      "Default": "t3.micro",
+      "AllowedValues": [
+        "t3.micro",
+        "t2.micro"
+        ],
+      "ConstraintDescription": "must be a valid EC2 instance type."
+    }
+  }
+}
