@@ -1,0 +1,13 @@
+{
+  "Outputs": {
+    "PublicIP": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ServerInstance",
+          "PublicIp"
+        ]
+      },
+      "Description": "Newly created server IP address"
+    }
+  }
+}
